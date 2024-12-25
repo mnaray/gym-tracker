@@ -1,0 +1,62 @@
+{
+  "name": "Gym-Tracker DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "oderwat.indent-rainbow",
+        "eamodio.gitlens",
+        "bung87.rails",
+        "aki77.rails-routes",
+        "aki77.rails-db-schema",
+        "aki77.rails-i18n",
+        "shanehofstetter.rails-i18n",
+        "bradlc.vscode-tailwindcss",
+        "alefragnani.bookmarks",
+        "usernamehw.errorlens",
+        "github.copilot",
+        "jock.svg",
+        "vscode-icons-team.vscode-icons",
+        "shopify.ruby-extensions-pack",
+        "ninoseki.vscode-mogami",
+        "gruntfuggly.todo-tree"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.autoSave": "afterDelay",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.formatOnSave": true,
+        "vsicons.dontShowNewVersionMessage": true,
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.colorTheme": "Spinel",
+        "workbench.startupEditor": "none",
+        "tailwindCSS.includeLanguages": {
+          "ruby": "html"
+        },
+        "tailwindCSS.experimental.classRegex": [
+          "\\bclass:\\s*[\"']([^\"']*)[\"']"
+        ],
+        "[ruby]": {
+          "editor.defaultFormatter": "shopify.ruby-lsp",
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true,
+          "editor.semanticHighlighting.enabled": true,
+          "editor.formatOnType": true
+        }
+      }
+    }
+  }
+}
