@@ -1,5 +1,5 @@
 # Use the base image that supports ARM64 architecture
-FROM ruby:3.4.1
+FROM ruby:3.3.6
 
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
     -t https://github.com/denysdovhan/spaceship-prompt \
