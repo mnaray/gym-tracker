@@ -11,5 +11,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN gem install dip
+
 # Set the default user
 USER root
